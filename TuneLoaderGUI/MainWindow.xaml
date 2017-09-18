@@ -1,12 +1,15 @@
-﻿<Window x:Class="TuneLoaderGUI.MainWindow"
+﻿<Window x:Name="TuneLoader" x:Class="TuneLoaderGUI.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:TuneLoaderGUI"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
+        Title="Tune Loader - Noah" Height="350" Width="525" ResizeMode="NoResize" Icon="Jukebox.ico">
     <Grid>
-        
+        <TextBox x:Name="T_LinkOrSearch" HorizontalAlignment="Left" Height="53" Margin="23,244,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="364" FontFamily="Questrial" FontSize="30" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+        <Button x:Name="B_Download" Content="Download" HorizontalAlignment="Left" VerticalAlignment="Top" Width="97" Margin="399,244,0,0" Height="53" Click="B_Download_Click" FontFamily="Questrial" FontSize="19" IsDefault="True" ToolTip="Downloads songs from youtube to a folder called &quot;Tunes&quot;"/>
+        <TextBox x:Name="T_Log" HorizontalAlignment="Left" Height="209" Margin="23,21,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="473" FontFamily="Questrial" FontSize="20" IsReadOnly="True" AcceptsReturn="True"/>
+
     </Grid>
 </Window>
