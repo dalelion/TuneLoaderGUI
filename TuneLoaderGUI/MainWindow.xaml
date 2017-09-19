@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:TuneLoaderGUI"
         mc:Ignorable="d"
-        Title="Tune Loader - Noah" Height="350" Width="525" ResizeMode="NoResize" Icon="Jukebox.ico">
+        Title="Tune Loader - Noah" Height="350" Width="525" ResizeMode="NoResize" Icon="Jukebox.ico" Closing="OnClose">
     <Grid>
         <TextBox x:Name="T_LinkOrSearch" HorizontalAlignment="Left" Height="53" Margin="23,244,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="364" FontFamily="Questrial" FontSize="30" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
         <Button x:Name="B_Download" Content="Download" HorizontalAlignment="Left" VerticalAlignment="Top" Width="97" Margin="399,244,0,0" Height="53" Click="B_Download_Click" FontFamily="Questrial" FontSize="19" IsDefault="True" ToolTip="Downloads songs from youtube to a folder called &quot;Tunes&quot;"/>
